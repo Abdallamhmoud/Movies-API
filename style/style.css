@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+}
+input{
+    background-color: transparent !important;
+}
+.item{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.item figcaption{
+    --margin-val: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(255,255,255,.7);
+    text-align: center;
+    transition: 1s all;
+    transform: translateY( 100% ) ;
+}
+.item:hover figcaption{
+
+    transform: translate(0);
+
+}
+figure img{
+    height: 350px;
+}
+#srch{
+    float: left !important;
+}
